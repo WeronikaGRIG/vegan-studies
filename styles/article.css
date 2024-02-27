@@ -1,0 +1,242 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.articles__main {
+  margin: 0 auto;
+  max-width: 1180px;
+  padding: 60px 100px;
+}
+@media (max-width: 300px) {
+  .articles__main {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .articles__main {
+    padding: 50px 70px;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .articles__main {
+    padding: 40px 60px;
+  }
+}
+@media (max-width: 480px) {
+  .articles__main {
+    padding: 30px 50px;
+  }
+}
+
+.articles__title-h3 {
+  text-align: center;
+  margin-top: 1px;
+  background-color: #F1F1F1;
+  margin-bottom: 100px;
+  font-family: "Arsenal", sans-serif;
+  font-size: 70px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0;
+  color: #2D2D2D;
+}
+@media (min-width: 992px) and (max-width: 1449px) {
+  .articles__title-h3 {
+    font-size: 55px;
+    margin-bottom: 60px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .articles__title-h3 {
+    font-size: 45px;
+    margin-bottom: 30px;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .articles__title-h3 {
+    font-size: 45px;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 480px) {
+  .articles__title-h3 {
+    font-size: 45px;
+    margin-bottom: 30px;
+  }
+}
+
+.articles__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 45px 65px;
+  margin: 0px auto;
+  max-width: 1180px;
+  max-width: 100%;
+  justify-content: center;
+}
+@media (max-width: 300px) {
+  .articles__container {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0px auto;
+    max-width: 200px;
+    grid-gap: 30px 30px;
+  }
+}
+@media (max-width: 480px) {
+  .articles__container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 40px 40px;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .articles__container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 45px 45px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .articles__container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 45px 65px;
+  }
+}
+.articles__container .atricles__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 2px solid #C7C7C7;
+  cursor: pointer;
+}
+.articles__container .atricles__card:hover {
+  background-color: rgba(120, 189, 148, 0.3411764706);
+}
+.articles__container .atricles__image {
+  display: flex;
+  justify-content: center;
+  max-width: 369px;
+  max-height: 413px;
+  min-height: 412px;
+  margin-bottom: 15px;
+  box-shadow: 0px 3px 9px 3px rgba(0, 0, 0, 0.5);
+}
+@media (max-width: 480px) {
+  .articles__container .atricles__image {
+    max-width: 252px;
+    min-width: 187px;
+    max-height: 341px;
+    min-height: 354px;
+  }
+}
+@media (min-width: 481px) and (max-width: 549px) {
+  .articles__container .atricles__image {
+    max-width: 347px;
+    min-width: 187px;
+    max-height: 293px;
+    min-height: 277px;
+  }
+}
+@media (min-width: 550px) and (max-width: 663px) {
+  .articles__container .atricles__image {
+    max-width: 366px;
+    min-width: 190px;
+    max-height: 336px;
+    min-height: 335px;
+  }
+}
+@media (min-width: 664px) and (max-width: 778px) {
+  .articles__container .atricles__image {
+    max-width: 366px;
+    min-width: 190px;
+    max-height: 368px;
+    min-height: 374px;
+  }
+}
+@media (min-width: 779px) and (max-width: 991px) {
+  .articles__container .atricles__image {
+    max-width: 316px;
+    min-width: 198px;
+    max-height: 390px;
+    min-height: 386px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1460px) {
+  .articles__container .atricles__image {
+    max-width: 461px;
+    min-width: 260px;
+    max-height: 418px;
+    min-height: 416px;
+  }
+}
+.articles__container .atricles__image .news-pic {
+  max-width: 100%;
+  max-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: -1;
+}
+.articles__container .card-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.articles__container .card-info .card-info__title {
+  display: flex;
+  flex-direction: column;
+  color: #2d2d2d;
+  font-family: "Arsenal", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: 1;
+  text-align: center;
+  padding-bottom: 15px;
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .articles__container .card-info .card-info__title {
+    font-size: 18px;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .articles__container .card-info .card-info__title {
+    font-size: 18px;
+  }
+}
+.articles__container .card-info .card-info__description {
+  display: flex;
+  flex-direction: column;
+  color: #505050;
+  padding-top: 8px;
+  text-align: center;
+  font-family: "Arsenal", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 160%;
+  letter-spacing: 2;
+  padding-bottom: 20px;
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .articles__container .card-info .card-info__description {
+    font-size: 16px;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .articles__container .card-info .card-info__description {
+    font-size: 16px;
+  }
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.container-wrapper {
+  margin: 0 auto;
+  padding-left: 130px;
+  padding-right: 130px;
+}/*# sourceMappingURL=article.css.map */
